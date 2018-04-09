@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/bottomText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="83dp"
+        android:text="TextView"
+        android:textSize="40sp" />
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_margin="20dp"
+
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#d2ff40"
+            android:padding="10dp"
+            android:text="TextView"
+            android:textColor="#000"
+            android:textSize="20sp"
+            app:layout_columnWeight="1" />
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:textSize="20sp"
+            app:layout_columnWeight="1"
+            android:textColor="#000"
+            android:background="#f2ff40"
+            android:padding="10dp"
+            android:text="TextView" />
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            app:layout_columnWeight="1"
+            android:textColor="#000"
+            android:background="#d2ff40"
+            android:padding="10dp"
+            android:text="TextView" />
+    </android.support.v7.widget.GridLayout>
+
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="40dp"
+        >
+
+
+
+        <Button
+            android:id="@+id/button0"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:gravity="center"
+            android:background="#d2ff40"
+            android:text="TextView"
+            android:textColor="#000"
+            android:onClick="buttonTapped"
+            android:textSize="30sp"
+            android:tag="0"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:layout_columnWeight="1" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:gravity="center"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:background="#e21f40"
+            android:tag="1"
+            android:onClick="buttonTapped"
+            app:layout_column="1"
+            app:layout_row="0"
+            android:text="TextView"
+            android:textColor="#000"
+            android:textSize="30sp"
+            app:layout_columnWeight="1" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:gravity="center"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:background="#22ff40"
+            android:onClick="buttonTapped"
+            android:tag="2"
+            app:layout_column="0"
+            app:layout_row="1"
+            android:text="TextView"
+            android:textColor="#000"
+            android:textSize="30sp"
+            app:layout_columnWeight="1" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:gravity="center"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:background="#feff00"
+            android:tag="3"
+            android:onClick="buttonTapped"
+            app:layout_column="1"
+            app:layout_row="1"
+            android:text="TextView"
+            android:textColor="#000"
+            android:textSize="30sp"
+            app:layout_columnWeight="1" />
+
+
+    </android.support.v7.widget.GridLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:onClick="startGame"
+        android:layout_margin="20dp"
+        android:text="Start" />
+
+
+</RelativeLayout>
